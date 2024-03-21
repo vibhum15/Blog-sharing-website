@@ -1,0 +1,20 @@
+<%- include("partials/header") %>
+
+<body>
+    <h1><%=home_var%></h1>
+    <p> <%=home_p1%></p>
+
+   
+
+    <% arr.forEach(element => { %>
+        <% console.log(element.newtext) %>
+        <h1><%= element.newtext %></h1>
+        <p><%= element.para.slice(0,100) + "....." %>
+        <a href="/posts/<%=element.formet%>">Read more</a>
+    </p> 
+    <% }); %>
+    
+</body>
+<!-- <%- include("partials/footer") %> -->
+
+</html>
